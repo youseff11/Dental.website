@@ -436,6 +436,7 @@ transition: 400ms;
     .wh-box{
         width: 100%;
         height: 100vh;
+        
     }
     .wh-box-s{
         width: 90%;
@@ -547,14 +548,12 @@ transition: 400ms;
     .FB-slider{
         width: 100%;
         height: 80vh;
-        /* scksjdvc */
     }
     .carouselExampleControlsNoTouching{
         padding: 20px;
-        width: 500px; 
+        width: 90%; 
         margin-left: auto;
         margin-right: auto;
-        height: 500px;
     
     }
     .thecards{
