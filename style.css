@@ -339,6 +339,11 @@ transition: 400ms;
             position: absolute;
             z-index: -1;
             }
+        .vo:hover::before{
+            background:linear-gradient(to right, var(--yellow-green),var(--secondry-color));
+
+        }
+
             .vo .vo-text{
                 background:linear-gradient(to right, var(--secondry-color),var(--yellow-green));
                 -webkit-background-clip: text;
