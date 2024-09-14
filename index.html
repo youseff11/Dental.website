@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+   
+        @media (min-width: 992px) {
+            .navbar .navbar-collapse {
+                order: 2;
+            }
+            .navbar .small-icon {
+                order: 3;
+            }
+            .navbar-toggler {
+                order: 1;
+            }
+
+         .header .small-icon svg{
+            padding-right: 20px;
+         }
+         .section-hero .box1 h1{
+            font-size: 80px;
+            line-height: 90px;
+            padding-left: 5rem;
+            padding-right: 5rem;
+         }
+         .cardx-box{
+            display: flex;
+            justify-content: center;
+         }
+         .cardx:nth-child(2){
+            margin-left: 4rem;
+            margin-right: 4rem;
+         }
+         .A-box{
+            display: flex;
+         }
+         .A-box-content{
+            text-align: center;
+            padding-top: 4rem;
+         }
+         .collex{
+            display: flex;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+         .end1{
+            height: 40vh;}
+    
+         .A-box-content p{
+            text-align: start;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        font-size: large;}
+
+        #carouselExampleCaptions {
+            width: 600px;}
+           
+        .darkk-s1-B button{
+            margin-top: 2rem;
+        }
+        .wh-cards{
+            display: flex;
+            
+        }
+        .thecards{
+            width: 30%};
+    
+    }
+
+
+    
+    
+
+     /* maxxxxxxxxxxxxxxxxxxxxxxxx */
+                
+        @media (max-width: 991px) {
+            .navbar .navbar-collapse {
+                order: 2;
+                width: 100%; 
+            }
+            .navbar .small-icon {
+                order: 3;
+            }
+            .navbar-toggler {
+                order: 1;
+                margin-left: auto;
+            }
+           
+           .header{
+                padding:20px 0 20px 0 ;
+           }
+         
+           .header .small-icon svg{
+            right: 80px;
+           }
+           .section-hero::before{
+           content: '';
+           position: absolute;
+           width: 80%;
+           height: 100%;
+           background-image: radial-gradient(circle closest-side,rgb(126,190,66,0.8),rgb(8,41,38,0.8));
+           top: 0;
+           right: auto;
+           left: auto;
+           z-index: 1;
+          filter: blur(150px);}
+          
+          .section-hero .imags img{
+            display: none;}
+            .cardx{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cardx:nth-child(2){
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+            .containerx{
+                width: 100%;
+                margin-top: 3rem;
+
+            }
+            .section-hero::after{
+                height: 70vh;}
+            .section-hero::before{
+                height: 70vh;}
+            .darkk-s1-B button{
+                margin-left: auto;
+                margin-right: auto;}
+            .wh-box{
+                height: 230vh;
+            }
+            .FB-slider{
+                height: 77vh;}
+            .end-cards{
+                width: 50%;
+                height: 100vh;}
+
+                
+     
+         }
+              
+    </style>
+</head>
+<body>
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- اللوجو -->
+                <a class="navbar-brand order-0" href="#">
+                    <img src="imags/zeal.svg" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="small-icon">
+                    <span>
+                        <i class="fa-regular fa-circle-user"></i>
+                    </span>
+                </div>
+
+                <!-- القائمة -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Dental examination</a></li>
+                                <li><a class="dropdown-item" href="#">Teeth whitening</a></li>
+                                <li><a class="dropdown-item" href="#">Orthodontic treatments</a></li>
+                                <li><a class="dropdown-item" href="#">Dental implant surgery</a></li>
+                                <li><a class="dropdown-item" href="#">Periodontal (gum) care</a></li>
+                                <li><a class="dropdown-item" href="#">Oral surgery</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section-hero">
+                <div class="container">
+                    <div class="big-box animate__animated animate__fadeInUp ">
+                       
+                        <div class="imags">
+                            <img class="photo-s1 " src="imags/zl1.png" alt="image">
+        
+                            <img class="photo-s2" src="imags/john.png" alt="image">
+            
+                            <img class="photo-s3" src="imags/bv.webp" alt="image">
+                        </div>
+        
+                        <div class="box1">
+                            <h1>Ignite Your Smile 
+                                with Confidence!
+                            </h1>
+                        </div>
+                        <div class="box2 ">
+                            <p>
+                            Experience dental excellence for a lifetime of joyful smiles. Discover transformative treatments, personalized care, and stunning results. Trust us for a beautiful, confident smile that lasts.
+                            <p>
+                            <button class="button-x">
+                                <span class="text">Book Appointment</span>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerx">
+                    <div class="big-boxx">
+                        <div class="containerx-text">
+                            <h1>Why trust us?</h1>
+                            <p>Experience the Distinction of Exceptional Dental Care at our Clinic. Our team of highly trained dental professionals and specialists is dedicated to delivering outstanding smile transformations while prioritizing your comfort. Immerse yourself in the transformative power of our state-of-the-art dental suites and embrace the positive change they can bring to your smile. Discover the difference that sets us apart and unlock a whole new level of dental excellence.</p>
+    
+                        </div>
+                        <div class="cardx-box">
+                            <div class="cardx">
+                                <div class="card-img">
+                                    <img src="imags/tooth.webp" alt="image">
+                                </div>
+                                <div class="card-content">
+                                    <h1>Exceptional Patient Care</h1>
+                                    <p>Elevating Your Dental Experience</p>
+                                </div>
+                            </div>
+                            <div class="cardx">
+                                <div class="card-img">
+                                    <img src="imags/teath.svg" alt="image">
+                                </div>
+                                <div class="card-content">
+                                    <h1>Swift Access</h1>
+                                    <p>Say Goodbye to Waiting with Our Efficient Service</p>
+                                </div>
+                            </div>
+                            <div class="cardx">
+                                <div class="card-img">
+                                    <img src="imags/true.svg" alt="image">
+                                </div>
+                                <div class="card-content">
+                                    <h1>Compassionate Staff</h1>
+                                    <p>Embracing Your Needs with Empathy and Understanding</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colorx-section">
+                    <div class="A-box">
+                        <div class="A-box-img ">
+                            <img src="imags/doctor.webp" alt="image">
+                        </div>
+                        <div class="A-box-content">
+                            <h2>About Zeal Dental</h2>
+                            <h1>Achieve Your Dream Smile Today!</h1>
+                            <p>Welcome to our dental practice, where you can turn your dream smile into a stunning reality. Our skilled team of professionals is dedicated to helping you achieve the smile of your dreams. With our advanced treatments and personalized care, we'll work closely with you to transform your smile, boosting your confidence and leaving you with a radiant, picture-perfect grin. Experience the joy of your dream smile today!</p>
+                            <button class="vo">
+                                <span class="vo-text">Read More</span>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="darkk-box">
+                    <div class="darkk-big">
+                        <div class="darkk-s1">
+                            <div class="darkk-s1-content">
+                                <h1>Our Services</h1>
+                                <p>At our dental practice, we strive to deliver exceptional dental care in a comfortable and patient-centered environment. Our team of skilled professionals is committed to providing personalized treatments that meet your unique needs. Contact us today to schedule an appointment and take the first step towards a healthy and beautiful smile.</p>
+                            </div>
+                            <div class="darkk-s1-B">
+                                <button>View ALL Services</button>
+                            </div>
+                        </div>
+                        <div class="darkk-s2">
+                            <div id="carouselExampleCaptions" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="imags/z1.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <p>Regular check-ups and professional cleanings to maintain oral health and prevent dental problems.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imags/z2.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <p>Cosmetic treatment to remove stains and discoloration, brightening the appearance of teeth.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imags/z3.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <p>Correction of misaligned teeth and jaw using braces, clear aligners (e.g., Invisalign), or other orthodontic appliances.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imags/z4.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <p>Restoration of damaged or decayed teeth using fillings, crowns, bridges, or implants to restore functionality and aesthetics.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imags/z5.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <p>Diagnosis and treatment of gum diseases, including scaling and root planing, gum grafting, and periodontal surgeries.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imags/z6.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <p>Surgical procedures such as wisdom teeth extraction, dental implants, jaw surgery, and treatment of oral diseases and infections.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wh-box">
+                    <div class="wh-box-s">
+                        <div class="wh-content">
+                            <h1>Meet Our Experts</h1>
+                            <p>At our dental practice, we have a dedicated team of highly skilled and compassionate professionals who are committed to providing exceptional dental care. Get to know our team of experts who will ensure that you receive the highest standard of treatment and personalized care</p>
+                        </div>
+                        <div class="wh-cards">
+                            <div class="cardy">
+                                <div class="cardy-img">
+                                    <img class="x3" src ="imags/cardy1.png" alt="">
+                                </div>
+                                <div class="cardy-contet">
+                                    <h3>Dr.Christina Mitchell</h3>
+                                </div>
+                            </div>
+                            <div class="cardy">
+                                <div class="cardy-img">
+                                    <img class="x1" src="imags/cardy2.png" alt="">
+                                </div>
+                                <div class="cardy-contet">
+                                    <h3>Dr.Emily Anderson</h3>
+                                </div>
+                            </div>
+                            <div class="cardy">
+                                <div class="cardy-img">
+                                    <img class="x2" src="imags/cardy3.png" alt="">
+                                </div>
+                                <div class="cardy-contet">
+                                    <h3>Dr.Michael Carter</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="FB-con">
+                    <div class="fb-con">
+                        <div class="FB-content">
+                            <h1>What Our Happy Patients Have to Say About us</h1>
+                        </div>
+                        <div class="FB-slider">
+                            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                <div class="carousel-inner">
+
+                                    <div class="thecards">
+
+                                        <div class="carousel-item active">
+                                            <!-- محتوى البطاقة الأولى -->
+        
+                                            <div class="carz-logo">
+                                                <img src="imags/x1.png" alt="image">
+                                            </div>
+                                            <div class="carz-content">
+                                                <p>I had a wonderful experience at Zeal Dental Clinic. The staff was friendly, the facility was clean, and the dentist provided excellent care. I highly recommend them for all your dental needs!</p>
+                                            </div>
+                                            <div class="carz-ph">
+                                                <div class="carz-img">
+                                                    <img src="imags/sara.jpg" alt="">
+                                                </div>
+                                                <div class="carz-name">
+                                                    <h5>Sarah B.</h5>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+
+
+
+                                                </div>
+                                            </div>
+        
+                                          </div>
+                                          <div class="carousel-item">
+                                            <!-- محتوى البطاقة الثانية -->
+        
+                                            <div class="carz-logo">
+                                                <img src="imags/x1.png" alt="image">
+                                            </div>
+                                            <div class="carz-content">
+                                                <p>"I'm extremely satisfied with the dental services I received from Zeal Dental Clinic. The dentist was professional, knowledgeable, and made me feel comfortable throughout the treatment."</p>
+                                            </div>
+                                            <div class="carz-ph">
+                                                <div class="carz-img">
+                                                    <img src="imags/john.png" alt="">
+                                                </div>
+                                                <div class="carz-name">
+                                                    <h5>John P.</h5>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+
+                                                </div>
+                                            </div>
+        
+                                          </div>
+                                          <div class="carousel-item">
+                                              <!-- محتوى البطاقة الثالثة -->
+
+                                    <div class="carz-logo">
+                                        <img src="imags/x1.png" alt="image">
+                                    </div>
+                                    <div class="carz-content">
+                                        <p>"I had been avoiding the dentist for years due to fear, but Zeal Dental Clinic changed that for me. The team was understanding and gentle, and the dentist did an amazing job."</p>
+                                    </div>
+                                    <div class="carz-ph">
+                                        <div class="carz-img">
+                                            <img src="imags/emily.jpg" alt="image">
+                                        </div>
+                                        <div class="carz-name">
+                                            <h5>Emily M.</h5>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+
+                                        </div>
+                                    </div>
+
+                                  </div>
+                                  <div class="carousel-item">
+                                    <!-- محتوى البطاقة الرابعة -->
+
+                                    <div class="carz-logo">
+                                        <img src="imags/x1.png" alt="image">
+                                    </div>
+                                    <div class="carz-content">
+                                        <p>"As someone who has always been anxious about dental visits, I was pleasantly surprised by my experience at Zeal Dental Clinic. The staff was caring, the environment was relaxing, and the dentist was skilled and attentive."</p>
+                                    </div>
+                                    <div class="carz-ph">
+                                        <div class="carz-img">
+                                            <img src="imags/john.png" alt="image">
+                                        </div>
+                                        <div class="carz-name">
+                                            <h5>Jasson.</h5>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+
+                                        </div>
+                                    </div>
+
+                                    </div>
+
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>                              
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="end1">
+                    <div class="collex">
+                        <!-- 1st card -->
+                        <div class="end-card">
+                            <div class="end-card-img">
+                                <img src="imags/tele.svg" alt="image">
+                            </div>
+                            <div class="end-card-contnet">
+                                <h4>Call Us:</h4>
+                                <p>+44 (0) 235-69-71</p>
+                            </div>
+                        </div>
+                
+                        <!-- 2nd card -->
+                        <div class="end-card">
+                            <div class="end-card-img">
+                                <img src="imags/mail.svg" alt="image">
+                            </div>
+                            <div class="end-card-contnet">
+                                <h4>Mail Us:</h4>
+                                <p>info@zealdental.com</p>
+                            </div>
+                        </div>
+                
+                        <!-- 3rd card -->
+                        <div class="end-card">
+                            <div class="end-card-img">
+                                <img src="imags/address.svg" alt="image">
+                            </div>
+                            <div class="end-card-contnet">
+                                <h4>Address:</h4>
+                                <p>765 Smith Well Suite 532</p>
+                            </div>
+                        </div>
+                
+                        <!-- 4th card -->
+                        <div class="end-card">
+                            <div class="end-card-img">
+                                <img src="imags/working.svg" alt="image">
+                            </div>
+                            <div class="end-card-contnet">
+                                <h4>Working Hours:</h4>
+                                <p>Monday - Friday: 8 am To 9 Pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                
+
+
+
+    </main>
+    <footer class="footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

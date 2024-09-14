@@ -1,0 +1,675 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+img{
+    width: 100%;
+}
+:root{
+    --black: black;
+    --primary-color:#082926;
+    --secondry-color:#27bbae;
+    --light-grey:#e4e2df;
+    --yellow-green:#7ebe42;
+    --white-color:#fff;
+    --azure:#e9f8f7;
+    --dark-grey:#aaa;
+    --white-grey:#f4f4f4;
+    --light-sea-green:rgba(39,187,174,0.3);
+    --border-radius-sm:1.25rem;
+    --border-radius-lg:1.875rem;
+    --transition: 400ms;
+}
+.header .navbar-brand {
+    z-index: 3; /* تأكد أن اللوجو يظهر فوق الخلفية */
+}
+
+.header .navbar .navbar-brand img{
+    max-width: 14rem;
+    padding-left: 10px;
+    
+    
+}
+.header{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 30px 0 30px 0;
+    z-index: 2;
+
+
+}
+
+.header .navbar-toggler{
+    background:linear-gradient(var(--secondry-color),var(--yellow-green));
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+.header .navbar .navbar-nav li a{
+    color: inherit;
+}
+.header .navbar .navbar-nav li a:hover{
+    color: var(--secondry-color) ;
+    transition: color var(--transition);
+}
+
+.header .small-icon svg{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2.4rem;    
+}
+.header .small-icon svg:hover{
+    color: #27bbae;
+    opacity: 0.7;
+    transition: 300ms;
+}
+.header .dropdown-menu{
+    background: linear-gradient(var(--secondry-color),var(--yellow-green));
+    color: var(--white-color);
+    width: 196px;
+    border-radius: 0;
+}
+/* section hero */
+.section-hero{ 
+    background-color: var(--primary-color);
+    height: 130vh;
+    color: white;
+}
+.section-hero::after{
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    background-image: radial-gradient(circle closest-side,#27bbae,#0d2b29);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    filter: blur(150px);
+
+}
+.section-hero::before{
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    background-image: radial-gradient(circle closest-side,rgb(126,190,66,0.8),rgb(8,41,38,0.8));
+    top: 0;
+    right: 0;
+    z-index: 1;
+    filter: blur(150px);
+
+}
+.section-hero .photo-s1{
+    width: 145px;
+    rotate: -20deg;
+    position: absolute;
+    top: 0;
+    left: -10%;
+}
+
+
+.section-hero .photo-s2{
+    width: 145px;
+    position: absolute;
+    rotate: -20deg;
+    top: 340px;
+    left: -5%;
+}
+
+.section-hero .photo-s3 {
+    position: absolute;
+    top: 340px;
+    left: 900px;
+    rotate: 20deg;
+    width: 180px;
+}
+
+.section-hero .big-box{
+    padding-top: 3rem;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 85%;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.section-hero .box1 {
+    margin-left: auto;
+    margin-right: auto;}
+
+.section-hero .box1 h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    text-decoration: none solid rgb(225,225,225);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+    
+.box2{
+/* width: 80%; */
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+padding-top: 10px;
+height: auto;
+}
+.section-hero .box2 p {
+        line-height: 30px;
+        margin-bottom: 20px;
+        font-size: large;
+        text-align: center;
+}
+.button-x{
+    color: var(--white-color);
+    background: rgba(8, 41, 38, 0.7);
+    border-radius: 25px;
+    font-size: 1.1rem;
+    padding:10px 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    position: relative;
+    border: solid transparent;
+
+}
+.button-x::before{
+    content: '';
+    position: absolute;
+    width: 238px;
+    height: 60px;
+    background:linear-gradient(to right, var(--secondry-color),var(--yellow-green));
+    border-radius: 25px;
+    z-index: -1;
+}
+.button-x:hover::before{
+    background:linear-gradient(to right, var(--yellow-green),var(--secondry-color));
+    transition: 500ms;
+
+}
+.button-x:hover .text{
+    color: rgb(39, 187, 174);
+}
+.button-x .fa-arrow-right-long{
+    font-size: 1.5rem;
+    color: inherit;
+}
+.button-x:hover .fa-arrow-right-long{
+    transform: translateX(20px);
+    transition: 500ms;
+}
+.photo-s1:hover{
+transform: translateY(70px) scale(1.25);
+opacity: 0.7;
+
+transition: 400ms;
+}
+.photo-s2:hover{
+    transform: translateX(70px) scale(1.25);
+    transition: 400ms;
+    opacity: 0.7;
+
+    }
+.photo-s3:hover{
+    transform: translateX(-70px) scale(1.25);
+    transition: 400ms;
+    opacity: 0.7;
+}
+.containerx{
+    width: 95%;
+    background-color: var(--white-color);
+    margin-top: 8rem;
+    color: #082926;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    
+}
+.big-boxx{
+    margin-left: auto;
+    margin-right: auto;
+}
+.containerx-text{
+    padding: 2rem;
+ 
+}
+.containerx-text h1{
+    margin-bottom: 2rem;
+    text-transform:uppercase;
+}
+.cardx-box{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+}
+.card-img{
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    margin-top: 1rem;
+    }
+    .cardx-box img{
+        transform: translateY(15px);
+        width: 80px;
+        height: 80px;
+    }
+    .cardx{
+        height: 250px;
+        width: 330px;
+        border-radius: 25px;
+        border: solid 3px #27bbae;
+    }
+    .cardx:hover{
+        transform: scale(1.1);
+        opacity: 0.6;
+        transition: 0.4ms;
+    }
+    .card-content h1{
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .card-content p{
+        text-transform: lowercase;
+        text-align: center;
+        font-size: 12px;
+        opacity: 0.7;
+       }
+       /* girl section-------------- */
+    .colorx-section{
+        width: 100%;
+        height: 100vh;
+        margin-top: 1rem;
+        background-image: radial-gradient(circle closest-corner at 43% 49%, rgba(39, 187, 174, 0.3), rgba(39, 187, 174, 0));
+     }
+     .A-box{
+        color: black;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+       }
+       .A-box-img img{
+           width: 504px;
+           height: 643px;
+          
+       }
+       .A-box-img img:hover{
+        opacity: 0.8;
+        transform: scaleX(-1) scale(1.25); 
+        transition: transform 0.5s ease; }
+    .A-box-content{
+        padding: 20px;
+    }
+    .A-box-content h2{
+        color:var(--secondry-color)
+    }
+    .A-box-content h1{
+        font-weight: 600;}
+        .A-box-content .vo{
+            border-radius: 25px;
+            background-color: var(--white-color);
+            padding:9px 28px; 
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            border: solid transparent;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        .vo::before{
+            content: '';
+            width: 183px;
+            height: 55px;
+            background:linear-gradient(to right, var(--secondry-color),var(--yellow-green));
+            border-radius: 25px;
+            position: absolute;
+            z-index: -1;
+            }
+            .vo .vo-text{
+                background:linear-gradient(to right, var(--secondry-color),var(--yellow-green));
+                -webkit-background-clip: text;
+                color: transparent;
+                z-index: 2;
+            }
+            .vo .fa-arrow-right-long{
+                margin-left: 8px;
+                font-size:1.5rem;    
+                color: var(--yellow-green);
+                opacity: 0.9;
+            }
+            .vo:hover .fa-arrow-right-long{
+                transform: translateX(10px);
+                transition: 400ms;
+            }
+            
+    /* slider section------------------------*/
+    .darkk-box {
+        background-color: rgba(8, 41, 38, 1);
+        width: 100%;
+        height: 140vh;
+        padding-top: 2rem;
+        position: relative; 
+        z-index: 1; 
+    }
+    .darkk-box::after {
+        content: '';
+        background-image: url('c:/Users/magdy/Desktop/zl.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; 
+        opacity: 0.080; 
+    }
+    .darkk-big{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        padding-right: 20px;
+        display: block;
+    
+    }
+    .darkk-s1-content{
+        color: white;
+        text-align: left;
+    }
+    .darkk-s1-content P{
+        line-height: 30px;
+        margin-top: 20px;
+        font-size: 19px;
+    }
+    .darkk-s1-B button{
+        color: var(--white-color);
+        background-color: rgba(8, 41, 38, 1);
+        border-radius: 25px;
+        font-size: 1.1rem;
+        padding:10px 20px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+        border: solid transparent;
+    
+    }
+    .darkk-s1-B button::before{
+        content: '';
+        position: absolute;
+        width: 185px;
+        height: 55px;
+        background:linear-gradient(to right, var(--secondry-color),var(--yellow-green));
+        border-radius: 25px;
+        z-index: -1;
+    }
+    .darkk-s1-B:hover button::before{
+        background:linear-gradient(to right, var(--yellow-green),var(--secondry-color));
+        transition: 400ms;
+    
+    }
+    #carouselExampleCaptions {
+        color: white;
+        padding: 20px;
+        width: 500px; 
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    /* ---------------------doctores section--------------------------------- */
+    .wh-box{
+        width: 100%;
+        height: 100vh;
+    }
+    .wh-box-s{
+        width: 90%;
+        margin-top: 2rem;
+        height: 80vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .wh-content{
+    text-align: center;    
+    color:black;
+    }
+    .wh-content p{
+        font-size: large;
+    }
+    .wh-cards{
+        display: block;
+    }
+    .cardy-img{
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+   
+    .cardy{
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1;
+    }
+    .cardy::after{
+        content: '';
+        position: absolute;
+        bottom: 7%;
+        left: 0;
+        right: 0;
+        height: 72%;
+        width: 100%;
+        background-color:#27bbae ;
+        opacity: 0.7;
+        border-top-left-radius: 20px; 
+        border-top-right-radius: 20px; 
+        z-index: -1;
+    }
+    .cardy:hover::after{
+        background:linear-gradient(to right, var(--secondry-color),var(--yellow-green));
+        transition: 400ms;
+        opacity: 1;
+    }
+    .cardy-img .x1{
+        width: 220px;
+    }
+    .cardy-img .x1:hover{
+        transform:  scale(1.15) translateY(-1.2rem);
+        opacity: 0.8;
+        transition: 400ms;
+    }
+
+    .cardy-img .x2{
+        width: 245px;
+    }
+    .cardy-img .x2:hover{
+        transform:  scale(1.15) translateY(-1.2rem);
+        opacity: 0.8;
+        transition: 400ms;   
+    }
+    .cardy-img .x3:hover{
+        transform:  scale(1.15) translateY(-1.2rem);
+        opacity: 0.8;
+        transition: 400ms;  }
+
+
+
+    .cardy-img img{
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .cardy-contet{
+        text-align: center;
+        color: black;
+        border-radius: 10px;
+        background-color:white;
+       padding: 8px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* ----------------------feed-back------------------------------------- */
+    .FB-con{
+    background-color :rgba(39, 187, 174, 0.1);
+    height: 100vh;
+    width: 100%;
+    }
+    .fb-con{
+        width: 90%;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .FB-content{
+        padding: 1rem;
+        text-align: center;
+        color: #082926;
+    }
+    .FB-slider{
+        width: 100%;
+        height: 80vh;
+        /* scksjdvc */
+    }
+    .carouselExampleControlsNoTouching{
+        padding: 20px;
+        width: 500px; 
+        margin-left: auto;
+        margin-right: auto;
+        height: 500px;
+    
+    }
+    .thecards{
+        height: 70vh;
+        background:linear-gradient( var(--secondry-color),var(--yellow-green));
+        margin-top: 2rem;
+        border-radius:15px ;
+        width:65%;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.9;
+    }
+    .carz-logo{
+        margin-top: 2rem;
+        width: 40%;
+        height: 80px;
+        
+    }
+    .carz-logo img{
+        margin-left: 50px;
+        width: 90px;
+    }
+    .carz-content{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height:27vh ;
+        color: white;
+        font-size: large;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .carz-ph{
+        display: flex;
+        height: 14vh;
+        width: 50%;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    .carz-img{
+        height: 90%;
+        width: 50%;
+        border-radius: 50%;
+        
+    }
+    .carz-img img{
+        width:100%;
+        height: 100%;
+        border-radius: 50%;
+        background-size: cover;
+
+    }
+    .carz-name{
+        text-align: center;
+        width: 56%;
+        margin-top: 0.5rem;
+    }
+    .fa-star{
+        font-size:xx-small;
+
+    }
+    .carousel-control-next-icon {
+        background-color: #082926;
+    }
+    .carousel-control-prev-icon {
+        background-color: #082926;
+
+    }
+    /*       last section----------------------------------- */
+    .end1{
+        width: 100%;
+        /* height: 100vh; */
+        background-color: #082926;
+        padding-top: 2rem;
+    }
+    .collex{
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+
+    }
+    .end-card{
+        width: 35%;
+        display: flex;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 0;
+    }
+    .end-card-img{
+        width: 80px;   
+    }
+    .end-card-img img{
+        width:50px;
+
+        }
+    .end-card-contnet h4{
+            font-size:large;}
+    
+     .end-card-contnet p{
+        font-size: small;
+     }
+    .end-card-contnet p:hover{
+            color: #27bbae;
+            opacity: 0.7;
+            transition: 300ms;
+        
+    }
+
+        
+
+        
+
+
+
+
+
+
+
+   
