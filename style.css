@@ -183,8 +183,8 @@ height: auto;
 .button-x::before{
     content: '';
     position: absolute;
-    width: 238px;
-    height: 60px;
+    width: 237px;
+    height: 59px;
     background:linear-gradient(to right, var(--secondry-color),var(--yellow-green));
     border-radius: 25px;
     z-index: -1;
