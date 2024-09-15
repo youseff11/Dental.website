@@ -579,11 +579,11 @@ transition: 400ms;
     
     }
     .thecards{
-        height: 55vh;
+        height: 50vh;
         background:linear-gradient( var(--secondry-color),var(--yellow-green));
         margin-top: 2rem;
         border-radius:15px ;
-        width:85%;
+        width:95%;
         margin-left: auto;
         margin-right: auto;
         opacity: 0.9;
