@@ -1,81 +1,251 @@
-.section-hero{ 
-    width: 100%;
-    position: absolute;
-    top: 0;
-    height: 110vh;
-}
-.login-box{
-    position: relative;
-    z-index: 2;
-    border-radius: 15px;
-    height: 70vh;
-    width: 80%;
-    border:solid 1px white ;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30vh;
-}
-.login-box h1{
-    text-align: center;
-    margin-top: 9vh;
-    margin-bottom: 5vh;
-    font-weight: 700;
-}
-.login-card{
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.white{
-    font-size: large;
-    margin-top: 1.5rem;
-    border-radius: 25px;
-    padding: 9px 27px 9px 21px;
-    color:#27bbae ;
-    font-weight: 500;
-    border: 1px solid #27bbae;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+    <style>
+   
+        @media (min-width: 992px) {
+            .navbar .navbar-collapse {
+                order: 2;
+            }
+            .navbar .small-icon {
+                order: 3;
+            }
+            .navbar-toggler {
+                order: 1;
+            }
+
+         .header .small-icon svg{
+            padding-right: 20px;
+         }
+         .section-hero .box1 h1{
+            font-size: 80px;
+            line-height: 90px;
+            padding-left: 5rem;
+            padding-right: 5rem;
+         }
+         .login-box{
+            width: 30%}
+        .collex{
+            display: flex;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .end1{
+            height: 40vh;}
+              
+        }
+
+         /* ------------------------------------------- */
+         @media (max-width: 991px) {
+            .navbar .navbar-collapse {
+                order: 2;
+                width: 100%; 
+            }
+            .navbar .small-icon {
+                order: 3;
+            }
+            .navbar-toggler {
+                order: 1;
+                margin-left: auto;
+            }
+           
+           .header{
+                padding:20px 0 20px 0 ;
+           }
+         
+           .header .small-icon svg{
+            right: 80px;
+           }
+           .end-card{
+                width: 70%;
+           }
+            .end1{
+                height: 90vh;
+            }
+            .login-box{
+                margin-top: 20vh;
+                height: 60vh;
+
+            }
+            
     
-}
-.white::before{
-    content: '';
-    position: absolute;
-    width: 145px;
-    height: 50px;
-    border-radius: 25px;
-    background:  linear-gradient(to right, rgb(39, 187, 174 ,0.4) 35%, rgb(126, 190, 66,0.4));
-    z-index: -1;
 
-}
-.white:hover{
-    background-color: transparent;
 
-}
-.fa-arrow-right-long{
-    margin-left: 1rem;
-    font-size: 20px;
-}
-.white:hover .fa-arrow-right-long{
-    transform: translateX(12px);
-    transition: 400ms;
-}
-.login-content{
-    margin-top: 1.5rem;
-    display: flex;
-}
-.login-content p{
-    margin-right: 1rem;
-}
-.login-content a{
-    color: white;
-    font-weight: 400;
-}
-.end1{
-    margin-top: 10vh;
-    position: relative;
-    z-index: 2;
-}
+        }
+
+    </style>
+
+</head>
+<body>
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- اللوجو -->
+                <a class="navbar-brand order-0" href="index.html">
+                    <img src="imags/zeal.svg" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="small-icon">
+                    <a href="login.html">
+                        <span>
+                            <i class="fa-regular fa-circle-user"></i>
+                        </span>
+                    </a>
+                   
+                </div>
+
+                <!-- القائمة -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about us.html">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Dental examination</a></li>
+                                <li><a class="dropdown-item" href="#">Teeth whitening</a></li>
+                                <li><a class="dropdown-item" href="#">Orthodontic treatments</a></li>
+                                <li><a class="dropdown-item" href="#">Dental implant surgery</a></li>
+                                <li><a class="dropdown-item" href="#">Periodontal (gum) care</a></li>
+                                <li><a class="dropdown-item" href="#">Oral surgery</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- section hero -->
+    <section class="section-hero">
+        <div class="container">
+            <div class="login-box">
+                    <h1>Log in</h1>
+                <div class="login-card">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                      <button class="white">Log in
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </button>
+                      <div class="login-content">
+                        <p> Don't have an account?</p>
+                        <a href="http://">sign up</a>
+                      </div>
+                      </form>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+        <div class="end1">
+            <div class="collex">
+                <!-- 1st card -->
+                <div class="end-card">
+                    <div class="end-card-img">
+                        <img src="imags/tele.svg" alt="image">
+                    </div>
+                    <div class="end-card-contnet">
+                        <h4>Call Us:</h4>
+                        <p>+44 (0) 235-69-71</p>
+                    </div>
+                </div>
+        
+                <!-- 2nd card -->
+                <div class="end-card">
+                    <div class="end-card-img">
+                        <img src="imags/mail.svg" alt="image">
+                    </div>
+                    <div class="end-card-contnet">
+                        <h4>Mail Us:</h4>
+                        <p>info@zealdental.com</p>
+                    </div>
+                </div>
+        
+                <!-- 3rd card -->
+                <div class="end-card">
+                    <div class="end-card-img">
+                        <img src="imags/address.svg" alt="image">
+                    </div>
+                    <div class="end-card-contnet">
+                        <h4>Address:</h4>
+                        <p>765 Smith Well Suite 532</p>
+                    </div>
+                </div>
+        
+                <!-- 4th card -->
+                <div class="end-card">
+                    <div class="end-card-img">
+                        <img src="imags/working.svg" alt="image">
+                    </div>
+                    <div class="end-card-contnet">
+                        <h4>Working Hours:</h4>
+                        <p>Monday - Friday: 8 am To 9 Pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
