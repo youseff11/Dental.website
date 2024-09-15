@@ -579,7 +579,7 @@ transition: 400ms;
     
     }
     .thecards{
-        height: 50vh;
+        height: 60vh;
         background:linear-gradient( var(--secondry-color),var(--yellow-green));
         margin-top: 2rem;
         border-radius:15px ;
