@@ -1,0 +1,79 @@
+.section-hero{ 
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 110vh;
+}
+.login-box{
+    position: relative;
+    z-index: 2;
+    border-radius: 15px;
+    height: 70vh;
+    width: 70%;
+    border:solid 1px white ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+}
+.login-box h1{
+    text-align: center;
+    margin-top: 9vh;
+    margin-bottom: 5vh;
+    font-weight: 700;
+}
+.login-card{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.white{
+    font-size: large;
+    margin-top: 1.5rem;
+    border-radius: 25px;
+    padding: 9px 27px 9px 21px;
+    color:#27bbae ;
+    font-weight: 500;
+    border: 1px solid #27bbae;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.white::before{
+    content: '';
+    position: absolute;
+    width: 145px;
+    height: 50px;
+    border-radius: 25px;
+    background:  linear-gradient(to right, rgb(39, 187, 174 ,0.4) 35%, rgb(126, 190, 66,0.4));
+    z-index: -1;
+
+}
+.white:hover{
+    background-color: transparent;
+
+}
+.fa-arrow-right-long{
+    margin-left: 1rem;
+    font-size: 20px;
+}
+.white:hover .fa-arrow-right-long{
+    transform: translateX(12px);
+    transition: 400ms;
+}
+.login-content{
+    margin-top: 1.5rem;
+    display: flex;
+}
+.login-content p{
+    margin-right: 1rem;
+}
+.login-content a{
+    color: white;
+    font-weight: 400;
+}
+.end1{
+    margin-top: 10vh;
+}
