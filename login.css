@@ -9,7 +9,7 @@
     z-index: 2;
     border-radius: 15px;
     height: 70vh;
-    width: 90%;
+    width: 100%;
     border:solid 1px white ;
     margin-left: auto;
     margin-right: auto;
@@ -68,7 +68,7 @@
     display: flex;
 }
 .login-content p{
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 .login-content a{
     color: white;
