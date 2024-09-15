@@ -346,7 +346,7 @@ transition: 400ms;
         }
         .vo::before{
             content: '';
-            width: 183px;
+            width: 185px;
             height: 55px;
             background:linear-gradient(to right, var(--secondry-color),var(--yellow-green));
             border-radius: 25px;
@@ -356,6 +356,9 @@ transition: 400ms;
         .vo:hover::before{
             background:linear-gradient(to right, var(--yellow-green),var(--secondry-color));
 
+        }
+        .vo a{
+            text-decoration: none;
         }
 
             .vo .vo-text{
@@ -576,11 +579,11 @@ transition: 400ms;
     
     }
     .thecards{
-        height: 70vh;
+        height: 55vh;
         background:linear-gradient( var(--secondry-color),var(--yellow-green));
         margin-top: 2rem;
         border-radius:15px ;
-        width:65%;
+        width:85%;
         margin-left: auto;
         margin-right: auto;
         opacity: 0.9;
